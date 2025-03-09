@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+.loading-container {
+    text-align: center;
+}
+
+.osito {
+    width: 150px;
+    /* Ajusta el tamaño según tu GIF */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.barra-carga {
+    width: 300px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.progreso {
+    width: 0;
+    height: 100%;
+    background-color: #ff6f61;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.texto-carga {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

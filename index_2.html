@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicatoria de Flores</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- Reproductor de música (oculto) -->
+    <audio id="musica" loop>
+        <source src="" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <div class="container">
+        <!-- Botones Plus, Love y Ánimo -->
+        <div class="botones-superiores">
+            <button id="btn-plus" class="btn-plus">➕ Plus</button>
+            <button id="btn-love" class="btn-love">❤️ Love</button>
+            <button id="btn-animo" class="btn-animo">🌟 Ánimo</button>
+        </div>
+
+        <h3>🌹 Somos parte de un Universo 🌸</h3>
+        <div id="flor-container">
+            <img id="flor-imagen" src="" alt="Flor" style="display: none;">
+            <!-- Imagen de la flor -->
+            <span id="flor-emoji">🌹</span>
+            <!-- Emoji de la flor -->
+        </div>
+        <p id="dedicatoria">¡Haz clic en el botón para generar una dedicatoria!</p>
+        <button onclick="generarDedicatoria()">Generar Dedicatoria</button>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

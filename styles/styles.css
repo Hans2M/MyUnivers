@@ -1,0 +1,231 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    animation: pulse 2s infinite;
+    /* Animación de pulso */
+    transition: box-shadow 0.3s ease;
+    /* Transición para el brillo */
+    position: relative;
+}
+
+
+/* Efecto de brillo al pasar el cursor */
+
+.container:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 105, 180, 0.6);
+    /* Brillo rosado */
+}
+
+
+/* Animación de pulso */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Botones superiores */
+
+.botones-superiores {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.botones-superiores button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.botones-superiores button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-plus {
+    background-color: #4caf50;
+    /* Verde */
+    color: white;
+}
+
+.btn-love {
+    background-color: #e91e63;
+    /* Rosado */
+    color: white;
+}
+
+
+/* Estilos para el tema Plus */
+
+.tema-plus {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.tema-plus h1 {
+    color: #4caf50;
+}
+
+.tema-plus button {
+    background-color: #4caf50;
+}
+
+
+/* Estilos para el tema Love */
+
+.tema-love {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.tema-love h1 {
+    color: #e91e63;
+}
+
+.tema-love button {
+    background-color: #e91e63;
+}
+
+h3 {
+    color: #e91ee2;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#flor-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+#flor-imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: none;
+    /* Oculto por defecto */
+}
+
+#flor-emoji {
+    font-size: 4em;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+#flor-emoji:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #555;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #c2185b;
+    transform: scale(1.1);
+}
+
+
+/* Estilos responsivos para móviles */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    #flor-emoji {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1em;
+    }
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .botones-superiores {
+        top: -15px;
+    }
+    .botones-superiores button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+
+/* Estilos para el tema Ánimo */
+
+.tema-animo {
+    background-color: #fff3e0;
+    /* Fondo naranja claro */
+    color: #e65100;
+    /* Texto naranja oscuro */
+}
+
+.tema-animo h1 {
+    color: #e65100;
+    /* Título naranja oscuro */
+}
+
+.tema-animo button {
+    background-color: #e65100;
+    /* Botón naranja oscuro */
+    color: white;
+}
